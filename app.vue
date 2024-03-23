@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import "@unocss/reset/tailwind.css";
+const layout = "default";
 </script>
 
 <template>
-  <div>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
