@@ -9,7 +9,7 @@ defineEmits(["click"]);
 </script>
 
 <template>
-  <div flex="~ col" class="flex-1 p4" border="~ base rounded-lg hover:primary" relative block h-full @click="$emit('click')">
+  <div flex="~ col" class="flex-1 p4" border="~ base rounded-lg hover:primary" relative block h-full shadow-xl cursor-pointer @click="$emit('click')">
     <span class="pointer-events-none mb4 h-7 w-7 inline-flex flex-none items-center text-lg text-primary" :class="image" />
     <div class="my-0 text-lg font-semibold">
       {{ name }}

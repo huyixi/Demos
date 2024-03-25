@@ -4,11 +4,10 @@ import DefaultFooter from "~/components/DefaultFooter.vue";
 </script>
 
 <template>
-  <div p-8>
+  <div class="bg-[#fffce1]">
     <DefaultHeader></DefaultHeader>
-
     <slot />
-    <DefaultFooter></DefaultFooter>
+    <DefaultFooter class="bg-[#242526] mt-16"></DefaultFooter>
   </div>
 </template>
 
