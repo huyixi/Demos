@@ -20,14 +20,20 @@
           </svg>
         </div>
       </div>
-      <div class="flex grow shrink-0 items-center space-x-2 max-w-[800px] min-w-[200px] ml-4">
-        <input type="search" placeholder="Search.." border-2 inline-block h-12 w-full rounded-full pr-1 pl-6 cursor-text />
+      <div class="relative flex items-center w-full ml-8">
+        <input type="search" placeholder="Search..." class="pl-6 pr-10 h-12 w-full rounded-full border border-black focus:border-4 focus:border-[#0CE447] focus:outline-none bg-[#FEFCE1]" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
       </div>
     </div>
   </header>
 </template>
 
 <style>
+.search-x input::placeholder {
+  color: #000000;
+}
 .subtitle {
   color: inherit;
   display: inline-block;
