@@ -1,5 +1,5 @@
 <template>
-  <header w-full px-6 my-8>
+  <header w-full mb-8>
     <div flex max-w-480 mx-auto justify-between>
       <div class="subtitle subtitle--regular subtitle--left" data-block="subtitle">
         <div class="subtitle__brace aspect-[27/78]">

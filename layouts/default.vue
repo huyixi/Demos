@@ -4,7 +4,7 @@ import DefaultFooter from "~/components/DefaultFooter.vue";
 </script>
 
 <template>
-  <div>
+  <div p-8>
     <DefaultHeader></DefaultHeader>
 
     <slot />

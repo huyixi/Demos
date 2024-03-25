@@ -21,18 +21,10 @@ onMounted(() => {
 
 <template>
   <div class="gallery">
-    <ul class="gallery-list">
+    <ul class="gallery-list grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-7.5 auto-rows-[150px] grid-flow-row-dense">
       <li v-for="demo in demos" :key="demo.name">
         <DemoCard :name="demo.name" @click="handleClick(demo.path)"></DemoCard>
       </li>
     </ul>
   </div>
 </template>
-
-<style lang="stylus">
-.gallery
-  .gallery-list
-    display grid
-    grid-template-cols repeat(auto-fill,minmax(180px,1fr))
-    gap 3em
-</style>
