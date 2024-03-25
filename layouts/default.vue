@@ -1,9 +1,18 @@
+<script>
+import DefaultHeader from "~/components/DefaultHeader.vue";
+import DefaultFooter from "~/components/DefaultFooter.vue";
+</script>
+
 <template>
   <div>
-    <h1 text-red>default-layout</h1>
+    <DefaultHeader></DefaultHeader>
 
     <slot />
-
-    <NuxtLink to="/">Return Home</NuxtLink>
+    <DefaultFooter></DefaultFooter>
   </div>
 </template>
+
+<style lang="stylus">
+html
+  color rgb(14, 16, 15)
+</style>

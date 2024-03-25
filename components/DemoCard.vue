@@ -2,19 +2,20 @@
 defineProps<{
   to?: string;
   image?: string;
-  title?: string;
-  description: string;
+  name?: string;
+  desc?: string;
 }>();
+defineEmits(["click"]);
 </script>
 
 <template>
-  <div flex="~ col" class="flex-1 p4" border="~ base rounded-lg hover:primary" relative block h-full>
+  <div flex="~ col" class="flex-1 p4" border="~ base rounded-lg hover:primary" relative block h-full @click="$emit('click')">
     <span class="pointer-events-none mb4 h-7 w-7 inline-flex flex-none items-center text-lg text-primary" :class="image" />
     <div class="my-0 text-lg font-semibold">
-      {{ title }}
+      {{ name }}
     </div>
     <div class="line-clamp line-clamp-2 mb-0 mt-1 text-[14px] op50">
-      {{ description }}
+      {{ desc }}
       <slot />
     </div>
     <NuxtLink :to="to" class="absolute inset-0" />

@@ -5,18 +5,20 @@
   "scripts": {
     "build": "nuxt build",
     "generate:demos": "node scripts/generateDemoList.js",
-    "dev": "pnpm run generate:demos && nuxt dev",
+    "dev": "pnpm run generate:demos &&  nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@unocss/reset": "^0.58.6",
+    "cross-env": "^7.0.3",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@unocss/nuxt": "^0.58.6"
+    "@unocss/nuxt": "^0.58.6",
+    "stylus": "^0.63.0"
   }
 }

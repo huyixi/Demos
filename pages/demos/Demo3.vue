@@ -4,7 +4,7 @@ definePageMeta({
 });
 
 const demoData = {
-  name: "Demo Two",
+  name: "Demo 3",
   desc: "Description for Demo Two",
   image: "",
 };

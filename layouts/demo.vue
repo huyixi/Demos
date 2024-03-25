@@ -1,10 +1,9 @@
 <template>
   <div>
-    <DemoHeader>
-      <NuxtLink to="/">Return Home</NuxtLink>
-    </DemoHeader>
-    <h1>demo-layout</h1>
+    <NuxtLink to="/">Return Home</NuxtLink>
 
     <slot />
   </div>
 </template>
+
+<style></style>
